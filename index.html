@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grade Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Grade Calculator</h1>
+    
+    <!-- Input form for grades -->
+    <form id="grade-form">
+      <div>
+        <label for="assignment1">Assignment 1:</label>
+        <input type="number" id="assignment1" placeholder="Enter grade" min="0" max="20" required>
+      </div>
+      <div>
+        <label for="assignment2">Assignment 2:</label>
+        <input type="number" id="assignment2" placeholder="Enter grade" min="0" max="20" required>
+      </div>
+      <div>
+        <label for="finalExam">Final Exam:</label>
+        <input type="number" id="finalExam" placeholder="Enter grade" min="0" max="50" required>
+      </div>
+      <button type="submit">Calculate Grade</button>
+    </form>
+    
+    <!-- Display the results -->
+    <div id="result">
+      <h2>Final Grade: <span id="finalGrade"></span></h2>
+      <p>Letter Grade: <span id="letterGrade"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
